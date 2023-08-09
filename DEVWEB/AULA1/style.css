@@ -1,6 +1,41 @@
-link {
-  color: blue;
+body {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 25px;
 }
-.um {
-  color: aquamarine;
+
+.tit {
+  color: #000;
+  text-transform: uppercase;
+}
+.quadra {
+  border: 1px solid blueviolet;
+  padding: 10px;
+  padding-top: 23px;
+}
+.tab_cab {
+  margin-top: 20px;
+  border: 1px solid crimson;
+}
+.tab_cab thead {
+  background-size: cover;
+  background-color: blue;
+}
+
+.tab_cab thead td {
+  color: darkgoldenrod;
+  border: green solid;
+}
+.box {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.ox .botao {
+  color: darkgoldenrod;
+  text-decoration: none;
+  padding: 30px 30px;
+  background-color: black;
+}
+.box .botao:hover {
+  background-color: aqua;
 }
