@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+element.style {
+  text-align: justify;
+}
+header {
+  background-color: #195128;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+nav {
+  background-color: #00420b;
+}
+.menu {
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.menu td {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+main {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+main .corpo_tex {
+  margin-top: 30px;
+  text-align: justify;
+}
+main .tit1 {
+  margin-bottom: 30px;
+}
+main .button {
+  margin-top: 30px;
+  text-align: center;
+}
+main .button a {
+  background-color: #195128;
+  color: white;
+  text-decoration: none;
+  padding: 20px 50px;
+  border-radius: 10px;
+}
+table .corpo_tex .col1 .button {
+  text-align: center;
+}
