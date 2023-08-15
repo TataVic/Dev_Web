@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0;
 }
+img {
+  max-width: 100%;
+}
 element.style {
   text-align: justify;
 }
@@ -11,6 +14,17 @@ header {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+header .Secao2 {
+  background-color: #195128;
+  text-align: center;
+  padding: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+main .Secao2 .titulo {
+  color: white;
+}
+
 nav {
   background-color: #00420b;
 }
@@ -32,16 +46,24 @@ main {
   padding-left: 50px;
   padding-right: 50px;
 }
+
 main .corpo_tex {
   margin-top: 30px;
   text-align: justify;
 }
 main .tit1 {
   margin-bottom: 30px;
+  padding: 30px;
 }
+
 main .button {
   margin-top: 30px;
   text-align: center;
+}
+main .col1,
+main .col2 {
+  width: 50%;
+  padding: 30px;
 }
 main .button a {
   background-color: #195128;
@@ -52,4 +74,11 @@ main .button a {
 }
 table .corpo_tex .col1 .button {
   text-align: center;
+}
+main .col2 img {
+  border-radius: 10px;
+  box-shadow: 13px 13px 3px #00420b;
+  width: 500px;
+}
+main .Secao2 {
 }
