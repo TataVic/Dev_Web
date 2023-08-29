@@ -71,14 +71,56 @@ main .button a {
   text-decoration: none;
   padding: 20px 50px;
   border-radius: 10px;
+  display: table-cell;
+  text-align: center;
 }
 table .corpo_tex .col1 .button {
   text-align: center;
 }
-main .col2 img {
-  border-radius: 10px;
-  box-shadow: 13px 13px 3px #00420b;
-  width: 500px;
+.faixa h1 {
+  background-color: #195128;
+  color: aliceblue;
+  text-align: center;
+  margin-top: 30px;
+
+  padding-top: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
-main .Secao2 {
+
+.faixa p {
+  background-color: #195128;
+  color: aliceblue;
+  text-align: center;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-bottom: 50px;
+}
+
+.conteudo3 .botoes {
+  background-color: #195128;
+  padding: 15px 50px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.conteudo3 .botoes a {
+  color: aliceblue;
+  text-decoration: none;
+  text-align: justify;
+}
+
+.conteudo3 {
+  padding-bottom: 50px;
+  padding-left: 100px;
+  text-align: justify;
+  margin-right: 50px;
+}
+
+.conteudo3 .botoes {
+  width: 25%;
+}
+
+.conteudo3 .texto {
+  width: 75%;
 }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-widht, initial-sacle=1.0, maximun-scale=0, user-scalabe=0"
+    />
+    <title>Aula 5 - flexbox</title>
+    <style>
+      .item {
+        background-color: blue;
+        padding: 10px;
+      }
+    </style>
+    <style>
+      .container {
+        display: flex;
+        /*  flex-direction: column;*/
+        justify-content: spa;
+        /*align-items: stretch;*/
+        align-content: stretch;
+        /*height: 100vh;*/
+        margin-top: 50px;
+      }
+      .container1 {
+        display: flex;
+        /* flex-direction: column-reverse;*/
+        margin-top: 50px;
+        align-content: space-between;
+      }
+    </style>
+  </head>
+  <body></body>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <div class="container1">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+</html>

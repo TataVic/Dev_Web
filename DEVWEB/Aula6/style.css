@@ -1,0 +1,44 @@
+:root {
+  --cor-principal: #195128;
+  --cor-fundo: #f4f4f4;
+  --cor-texto: #1c1c1d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: var(--cor-texto);
+}
+/*body {
+  background-color: var(--cor-principal);
+  background-color: var(--cor-fundo);
+}*/
+.cab {
+  background-color: var(--cor-principal);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.cab img {
+  max-width: 100px;
+}
+.cab .item a {
+  color: white;
+  text-decoration: none;
+}
+.cab logo {
+  min-width: 250px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
