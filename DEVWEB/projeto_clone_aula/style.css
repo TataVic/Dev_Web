@@ -1,0 +1,38 @@
+:root {
+  --cor--laranja: #f87000;
+  --cor--preta: #464648;
+  --cor--azul: #011e4a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: inherit; */
+  font-family: "Courier New", Courier, monospace;
+  color: var(--cor--preta);
+}
+
+#cabecalho {
+  background-color: var(--cor--azul);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#cabecalho .item {
+  display: flex;
+  align-items: center;
+}
+
+#cabecalho .item .icone {
+  margin-right: 10px;
+}
+
+#cabecalho .item .icone .imagem {
+  max-width: 30px;
+}
+#cabecalho .item .icone .imagem .text {
+  color: white;
+}
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
