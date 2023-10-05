@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h5 id="msg">Calculadora</h5>
+
+    <input type="number" id="vlr1" min="0" required placeholder="Digite o valor 1">
+    <input type="number" id="vlr2" min="0" placeholder="Digite o valor 2">
+    <button onclick="calcular()">Somar</button>
+    
+    <div style="margin-top: 20px;">
+        <input type="radio" name="tipo" id="soma" value="S">
+        <label for="soma">Somar</label>
+        <input type="radio" name="tipo" id="sub" value="SU">
+        <label for="sub">Subtração</label>
+        <input type="radio" name="tipo" id="div" value="D">
+        <label for="div">Divisão</label>
+        <input type="radio" name="tipo" id="mult" value="M">
+        <label for="mult">Multiplicação</label>
+    </div>
+
+    <div>
+        <p id="resultado">O valor da soma é: </p>
+    </div>
+
+    <script>
+        function calcular(){
+           var vlr1 = document.getElementById('vlr1');
+           var vlr2 = document.getElementById('vlr2');
+
+           var tipo = document.getElementsByName('tipo');
+           var selecao;
+        
+           for(var i=0;i < tipo.length; i++){
+             if(tipo[i].checked){
+                selecao = tipo[i].value;                    
+             }
+           }
+
+           if(vlr1.value == ""){
+            alert('Digite o primeiro valor');
+            vlr1.style.backgroundColor = "red";
+            return;
+           }else if(vlr2.value == ""){
+            alert('Digite o segundo valor');
+            vlr2.style.backgroundColor = "red";
+            return;
+           }
+
+           vlr1.style.backgroundColor = "";
+           vlr2.style.backgroundColor = "";
+
+           if(selecao == "S"){
+            var resultado = parseInt(vlr1.value) + parseInt(vlr2.value);
+           }else if(selecao == "SU"){
+            var resultado = parseInt(vlr1.value) - parseInt(vlr2.value);
+
+           }else if(selecao == "D"){
+
+            if(parseInt(vlr2.value) == parseInt('0')){
+                alert('Divisão por zero');
+                vlr2.style.backgroundColor = "red";
+                return;
+            }
+            var resultado = parseInt(vlr1.value) / parseInt(vlr2.value);
+           }else if(selecao == "M"){
+            var resultado = parseInt(vlr1.value) * parseInt(vlr2.value);
+           }
+           
+           document.getElementById('resultado').innerHTML = 'O valor é: ' + resultado.toFixed(2);
+        }
+    </script>
+</body>
+</html>
