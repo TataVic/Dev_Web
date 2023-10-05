@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validação de Input com Try-Catch</title>
+</head>
+<body>
+    <h1>Validação de Input com Try-Catch</h1>
+
+    <input type="text" id="inputCampo" placeholder="Digite algo...">
+    <button onclick="validarInput()">Validar</button>
+
+    <p id="mensagem"></p>
+
+    <script>
+        function validarInput() {
+            try {
+                const inputValor = document.getElementById('inputCampo').value;
+                
+                if (!inputValor) {
+                    throw new Error('O campo não pode estar vazio.');
+                }
+
+                // Coloque aqui sua lógica de validação adicional, se necessário.
+
+                document.getElementById('mensagem').textContent = 'Input válido!';
+            } catch (error) {
+                document.getElementById('mensagem').textContent = 'Erro: ' + error.message;
+            }
+        }
+    </script>
+</body>
+</html>
