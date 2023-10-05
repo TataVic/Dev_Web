@@ -1,0 +1,3 @@
+tipos de folhas de css, e forma de identar o css no código
+estrutura do css
+e definição de bootstrap

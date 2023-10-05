@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scable=0">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .box{
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .box .item{
+                width: 25%;
+                float: left;
+                height: 250px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+            }
+            @media(max-width: 800px){
+                .box .item{
+                    width: 50%;
+                }
+            }
+            @media(max-width: 500px){
+                .box .item{
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <tbody>
+        <div class="box">
+            <div class="item" style="background-color: red">Primeiro</div>
+            <div class="item" style="background-color: green">Segundo</div>
+            <div class="item" style="background-color: blue">Terceiro</div>
+            <div class="item" style="background-color: black">Quarto</div>
+        </div>
+    </tbody>
+</html>
