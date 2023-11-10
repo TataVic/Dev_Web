@@ -8,7 +8,7 @@ class Pessoa extends model{
         $sql = $this->db->query($sql);
 
         if ($sql->rowCount() > 0) {
-           $array = $sql->fetch(\PDO::FETCH_ASSOC);
+           $array = $sql->fetchAll(\PDO::FETCH_ASSOC);
         }
 
         return $array;

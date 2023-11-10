@@ -2,8 +2,8 @@
 class model{
     protected $db;
 
-    public function _construct(){
+    public function __construct(){
         global $db;
-        $this->db = $db;
+        $this->db=$db;
     }
 }
