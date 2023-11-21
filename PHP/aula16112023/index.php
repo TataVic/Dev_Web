@@ -32,7 +32,7 @@
             }
             .botao a{
                 text-decoration: none;
-                background-color: blue;
+                background-color: #eead2d;
                 padding: 20px 10px;
                 color:#fff;
                 font-size: 15px;
@@ -53,13 +53,8 @@
     <div class="titulo_tabela">
             <h1>Tabela Pessoa </h1>
             <br>
-        </div>
-
-    <!--     <div class="botao">
-            <a href="pessoa_adicionar.php">Adicionar</a>
-            <a >Editar</a>
-        </div>
-        <div class="botao">
+    </div>
+        <!-- <div class="botao">
             <a href="pessoa_adicionar.php">Adicionar</a>
             <a >Excluir</a>
         </div> -->
@@ -88,6 +83,9 @@
                     <?php endforeach; ?>
                 </tbody>
             </table>
+        </div>
+        <div class=" d-flex justify-content-center botao btn-lg">
+            <a type="button" class="btn btn-outline-warning text-center" href="pessoa_adicionar.php">Adicionar</a>
         </div>
     </body>
     </html>

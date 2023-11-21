@@ -40,24 +40,29 @@
                 size: 100px;
             }
             body{
-                background-color: #ff6961;
+                background-color: #c79685;
             }
             </style>
 </head>
 <body>
-    <form method="POST" action="PessoaAdicionar.php">
-        <input type="text" name="nome" required placeholder = "Digite aqui seu nome">
-        <input type="number" name="idade" required placeholder = "Idade" min="18" max="105">
-        <select name="sexo" required>
-            <option value = "">Selecione</option>
-            <option value = "M">Masculino</option>
-            <option value = "F">Feminino</option>
-        </select>
-        <input type="text" name="endereco" required placeholder = "Digite seu endereço" >
-        <div class="botaos">
-            <button><a href="index.php">Voltar</a></button>
-            <button  type="submit">Salvar</button>
-        </div>
-    </form>
+    <div class="d-flex justify-content-center"> 
+        <form method="POST" action="PessoaAdicionar.php">
+            <div class="col-12"><input type="text" class="form-control form-control-lg" name="nome" required placeholder = "Digite seu nome"></div>
+        <div class="col-12"><input type="number" class="form-control form-control-lg" name="idade" required placeholder = "Idade" min="18" max="105"></div>
+        
+            <div class="dropdown">
+                <select class="dropdown-toggle" name="sexo" required>
+                <option class="dropdown-menu" value = "">Selecione</option>
+                <option class="dropdown-item" value = "M">Masculino</option>
+                <option class="dropdown-item" value = "F">Feminino</option>
+            </select>
+            </div>
+            <div class="col-12"> <input type="text"  class="form-control form-control-lg" name="endereco" required placeholder = "Digite seu endereço" ></div>
+            <div class="botaos">
+                <button><a href="index.php">Voltar</a></button>
+                <button  type="submit">Salvar</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
