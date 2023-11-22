@@ -1,0 +1,8 @@
+ALTER table clientes
+ADD FOREIGN KEY (FK_compra) REFERENCES compras(ID);
+ALTER table compras
+ADD FOREIGN KEY (FK_cliente) REFERENCES clientes(ID),
+ ADD FOREIGN KEY (FK_produto) REFERENCES produtos(ID);
+
+ALTER table produtos
+ADD FOREIGN KEY (FK_compras) REFERENCES compras(ID);
