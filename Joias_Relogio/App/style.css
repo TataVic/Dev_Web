@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #db34a9;
+}
+
+
+.circle-container{ /* div pai */
+    display: flex;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 30px;
+    height: 10px;
+}
+
+.image-div { /* circulo */
+    padding: 20px 30px;
+    width: 60px;
+    height: 30px;
+    background-color: rgb(245, 207, 207);
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 8px;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+   }
